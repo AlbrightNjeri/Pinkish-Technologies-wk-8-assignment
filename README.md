@@ -16,9 +16,10 @@ A responsive multipage website built with HTML5, CSS3, and JavaScript demonstrat
 - Smooth animations
 
 ## Live Demo
-[Insert your deployed URL here]
+https://vercel.com/albrights-projects/pinkish-technologies-wk-8-assignment
 
 ## File Structure
 - index.html (complete website)
 - All CSS and JS embedded
+
 - Self-contained and ready to deploy
