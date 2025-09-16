@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinkTech Solutions - Beautiful Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">PinkTech Solutions</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Beautiful Web Solutions</h1>
+                    <p>We create stunning, elegant websites that captivate your audience with beautiful design and seamless functionality.</p>
+                    <a href="#" class="cta-button" data-page="contact">Get Started Today</a>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <h2 class="section-title">Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">🎨</div>
+                            <h3>Web Design</h3>
+                            <p>Beautiful, elegant designs that capture your brand essence and provide exceptional user experiences across all devices.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">💻</div>
+                            <h3>Development</h3>
+                            <p>Custom web applications built with the latest technologies, ensuring fast performance and seamless functionality.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">📱</div>
+                            <h3>Mobile Responsive</h3>
+                            <p>Fully responsive designs that look perfect and function flawlessly on smartphones, tablets, and desktop computers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="slider" id="slider">
+                            <div class="slide slide1">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Modern Web Design">
+                                <div class="slide-content">
+                                    <h3>Modern Design</h3>
+                                    <p>Clean, contemporary layouts that impress</p>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Fast Performance">
+                                <div class="slide-content">
+                                    <h3>Fast Performance</h3>
+                                    <p>Optimized for speed and user experience</p>
+                                </div>
+                            </div>
+                            <div class="slide slide3">
+                                <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Mobile First">
+                                <div class="slide-content">
+                                    <h3>Mobile First</h3>
+                                    <p>Designed for all devices and screen sizes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
+                        <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <section class="about-content">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h2>About PinkTech Solutions</h2>
+                            <p>With over 5 years of experience in web development, PinkTech Solutions specializes in creating beautiful, elegant websites that drive business growth and engage audiences with a feminine touch.</p>
+                            <p>Our team of skilled developers and designers work collaboratively to deliver exceptional digital experiences using the latest technologies including HTML5, CSS3, JavaScript, and modern frameworks.</p>
+                            <p>We believe in beautiful code, innovative design, and user-centered development approaches that ensure your website not only looks stunning but performs exceptionally across all platforms.</p>
+                            <p>From concept to deployment, we handle every aspect of your web project with creativity, attention to detail, and a commitment to elegance that sets us apart in the industry.</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Professional Team" class="team-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="contact-content">
+                <div class="container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="contact-grid">
+                        <div class="contact-form">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <div class="error-message" id="name-error">Please enter your full name</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <div class="error-message" id="email-error">Please enter a valid email address</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                    <div class="error-message" id="subject-error">Please enter a subject</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" required></textarea>
+                                    <div class="error-message" id="message-error">Please enter your message</div>
+                                </div>
+                                <button type="submit" class="submit-btn">Send Message</button>
+                                <div class="success-message" id="success-message">
+                                    Thank you! Your message has been sent successfully.
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <div class="contact-item">
+                                <i>💌</i>
+                                <span>info@pinktechsolutions.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>📞</i>
+                                <span>+254 712-345-678</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>📍</i>
+                                <span>123 Kenyatta Ave,<br>Nairobi,Kenya</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>🕒</i>
+                                <span>Monday - Friday: 9:00 AM - 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PinkTech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
